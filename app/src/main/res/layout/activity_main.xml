@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/appbarlayout">
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -16,21 +17,24 @@
             android:background="@color/colorPrimary"
             android:translationZ="2dp"
             app:titleTextAppearance="@style/CustomToolbar"
-            app:titleTextColor="@android:color/white"/>
+            app:titleTextColor="@android:color/white" />
+
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            app:tabBackground="#478EDD"
             app:tabGravity="fill"
+            app:tabIndicatorColor="#32A89F"
             app:tabInlineLabel="true"
             app:tabMode="fixed"
             app:tabTextAppearance="@style/CustomTabs"
-            app:tabBackground="@color/colorPrimary"
             app:tabTextColor="@android:color/white" />
     </com.google.android.material.appbar.AppBarLayout>
+
     <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/viewpager"
-        android:layout_below="@+id/appbarlayout"/>
+        android:layout_below="@+id/appbarlayout" />
 </RelativeLayout>
